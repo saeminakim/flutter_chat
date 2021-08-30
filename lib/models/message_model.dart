@@ -23,47 +23,47 @@ final User currentUser = User(
   imageUrl: 'assets/images/lemon.png',
 );
 
-final User greg = User(
+final User ed = User(
   id: 1,
-  name: 'Greg',
-  imageUrl: 'assets/images/lemon.png',
+  name: 'Ed',
+  imageUrl: 'assets/images/ed.jpg',
 );
 
-final User james = User(
+final User jim = User(
   id: 2,
-  name: 'James',
-  imageUrl: 'assets/images/lemon.png',
+  name: 'Jim',
+  imageUrl: 'assets/images/jim.jpg',
 );
 
-final User john = User(
+final User kai = User(
   id: 3,
-  name: 'John',
-  imageUrl: 'assets/images/lemon.png',
+  name: 'Kai',
+  imageUrl: 'assets/images/kai.png',
 );
 
 final User sophia = User(
   id: 4,
   name: 'Sophia',
-  imageUrl: 'assets/images/lemon.png',
+  imageUrl: 'assets/images/sophia.jpeg',
 );
 
-final User hayden = User(
+final User loren = User(
   id: 5,
-  name: 'Hayden',
-  imageUrl: 'assets/images/lemon.png',
+  name: 'Loren',
+  imageUrl: 'assets/images/loren.jpg',
 );
 
-final User lily = User(
+final User sasha = User(
   id: 6,
-  name: 'Lily',
-  imageUrl: 'assets/images/lemon.png',
+  name: 'Sasha',
+  imageUrl: 'assets/images/sasha.jpeg',
 );
 
-List<User> favorites = [greg, john, hayden, lily, sophia];
+List<User> favorites = [ed, kai, loren, sasha, sophia];
 
 List<Message> chats = [
   Message(
-    sender: james,
+    sender: jim,
     time: '5:30 PM',
     text: 'Hey, how\'s it going? What did you do today?',
     isLiked: false,
@@ -77,17 +77,76 @@ List<Message> chats = [
     unread: true,
   ),
   Message(
-    sender: hayden,
+    sender: loren,
     time: '3:30 PM',
     text: 'Hey, how\'s it going? What did you do today?',
     isLiked: false,
     unread: false,
   ),
   Message(
-    sender: lily,
+    sender: sasha,
     time: '2:30 PM',
+    text: 'Hey, how\'s it going? What did you do today?',
+    isLiked: false,
+    unread: true,
+  ),
+  Message(
+    sender: kai,
+    time: '1:30 PM',
+    text: 'Hey, how\'s it going? What did you do today?',
+    isLiked: false,
+    unread: false,
+  ),
+  Message(
+    sender: ed,
+    time: '12:30 PM',
     text: 'Hey, how\'s it going? What did you do today?',
     isLiked: false,
     unread: false,
   )
+];
+
+List<Message> messages = [
+  Message(
+    sender: sasha,
+    time: '5:30 PM',
+    text: 'Hey, how\'s it going? What did you do today?',
+    isLiked: true,
+    unread: true,
+  ),
+  Message(
+    sender: currentUser,
+    time: '4:30 PM',
+    text: 'Just walked my doge. She was super duper cute. The best pupper!!',
+    isLiked: false,
+    unread: true,
+  ),
+  Message(
+    sender: sasha,
+    time: '3:45 PM',
+    text: 'How\'s the doggo?',
+    isLiked: false,
+    unread: true,
+  ),
+  Message(
+    sender: sasha,
+    time: '3:15 PM',
+    text: 'All the food',
+    isLiked: true,
+    unread: true,
+  ),
+  Message(
+    sender: currentUser,
+    time: '2:30 PM',
+    text: 'Nice! What kind of food did you eat?',
+    isLiked: false,
+    unread: true,
+  ),
+  Message(
+    sender: sasha,
+    time: '2:00 PM',
+    text: 'I ate so much food today.',
+    isLiked: false,
+    unread: true,
+  ),
 ];
